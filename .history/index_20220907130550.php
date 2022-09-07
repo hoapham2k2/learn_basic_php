@@ -16,7 +16,7 @@
     define("FIRSTWEEKDAY", 'MONDAY');
 
 
-    echo "in hang so: \n", FIRSTWEEKDAY, "\r\n";         //Lấy hằng số bằng cách chỉ ra tên
+    echo "in hang so: ", FIRSTWEEKDAY, "\r\n";         //Lấy hằng số bằng cách chỉ ra tên
 
     $firstweek = 'FIRSTWEEKDAY';    //firstweek là biến, firstweekday là hằng số
     echo "in bien firstweek: ", constant($firstweek), "\r\n"; // Lấy hằng số có tên lưu trong biến $firstweek

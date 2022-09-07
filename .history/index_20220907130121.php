@@ -16,15 +16,11 @@
     define("FIRSTWEEKDAY", 'MONDAY');
 
 
-    echo "in hang so: \n", FIRSTWEEKDAY, "\r\n";         //Lấy hằng số bằng cách chỉ ra tên
+    echo "in hang so: ", FIRSTWEEKDAY, PHP_EOL;         //Lấy hằng số bằng cách chỉ ra tên
+    printf("in hang so: %s", FIRSTWEEKDAY);              //Lấy hằng số bằng cách chỉ ra tên
 
     $firstweek = 'FIRSTWEEKDAY';    //firstweek là biến, firstweekday là hằng số
-    echo "in bien firstweek: ", constant($firstweek), "\r\n"; // Lấy hằng số có tên lưu trong biến $firstweek
-
-
-    //PHP 7.0 da cho phep khai bao hang so nhu sau
-    const SECONDWEEKDAY = 'TUESDAY';
-    echo "in hang so: ", SECONDWEEKDAY, "\r\n";         //Lấy hằng số bằng cách chỉ ra tên
+    echo "in bien firstweek: ", constant($firstweek), PHP_EOL; // Lấy hằng số có tên lưu trong biến $firstweek
     ?>
 </body>
 
