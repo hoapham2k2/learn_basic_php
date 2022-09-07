@@ -90,7 +90,7 @@
         }
     }
     $testString = "Hello World! I'm a PHP developer.";
-    echo  mb_strlen(truncateString($testString)) . " - " . truncateString($testString);
+    echo  mb_strlen(truncateString($testString));
     ?>
 </body>
 

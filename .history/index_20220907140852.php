@@ -66,31 +66,6 @@
     echo strtr($str, $ar) . "<br>";
     //OUT: Lap ba lap bap!
 
-    $str = 'Lap ba lap bap!';
-    echo mb_substr($str, 7) . "<br>";
-    //OUT: lap bap!
-    $str = 'Lập bà lập bập!';
-    echo mb_substr($str, 7) . "<br>";
-    //OUT: lập bập!
-
-
-    //     trim	Loại bỏ khoảng trắng của chuỗi.
-    // is_string($var)	Kiểm tra xem $var có phải là chuỗi.
-    // empty($var)	Nếu chuỗi rỗng trả về true. Chuỗi rỗng như "", null, '0'
-
-
-
-    // Ví dụ, mẩu tin dài, chỉ giữ lại 20 từ đầu tiên và dấu ...
-    function truncateString($str, $maxChars = 20, $holder = "...")
-    {
-        if (strlen($str) > $maxChars) {
-            return trim(substr($str, 0, $maxChars)) . $holder;
-        } else {
-            return $str;
-        }
-    }
-    $testString = "Hello World! I'm a PHP developer.";
-    echo  mb_strlen(truncateString($testString)) . " - " . truncateString($testString);
     ?>
 </body>
 

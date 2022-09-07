@@ -78,19 +78,16 @@
     // is_string($var)	Kiểm tra xem $var có phải là chuỗi.
     // empty($var)	Nếu chuỗi rỗng trả về true. Chuỗi rỗng như "", null, '0'
 
+    Ví dụ, mẩu tin dài, chỉ giữ lại 20 từ đầu tiên và dấu ...
 
-
-    // Ví dụ, mẩu tin dài, chỉ giữ lại 20 từ đầu tiên và dấu ...
-    function truncateString($str, $maxChars = 20, $holder = "...")
-    {
-        if (strlen($str) > $maxChars) {
-            return trim(substr($str, 0, $maxChars)) . $holder;
-        } else {
-            return $str;
-        }
+function truncateString($str, $maxChars = 40, $holder = "...")
+{
+    if (strlen($str) > $maxChars) {
+        return trim(substr($str, 0, $maxChars)) . $holder;
+    } else {
+        return $str;
     }
-    $testString = "Hello World! I'm a PHP developer.";
-    echo  mb_strlen(truncateString($testString)) . " - " . truncateString($testString);
+}
     ?>
 </body>
 

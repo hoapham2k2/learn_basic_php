@@ -81,7 +81,7 @@
 
 
     // Ví dụ, mẩu tin dài, chỉ giữ lại 20 từ đầu tiên và dấu ...
-    function truncateString($str, $maxChars = 20, $holder = "...")
+    function truncateString($str, $maxChars = 40, $holder = "...")
     {
         if (strlen($str) > $maxChars) {
             return trim(substr($str, 0, $maxChars)) . $holder;
@@ -89,8 +89,8 @@
             return $str;
         }
     }
-    $testString = "Hello World! I'm a PHP developer.";
-    echo  mb_strlen(truncateString($testString)) . " - " . truncateString($testString);
+
+    truncateString("Hello World! I'm a PHP developer.", 20);
     ?>
 </body>
 
