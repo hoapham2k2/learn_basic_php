@@ -14,8 +14,7 @@
     <?php
     $a = 29;
     $b = 43;
-    echo "so thu nhat la: $a <br>";
-    echo "so thu hai la: $b <br>";
+
     $c = $a + $b;
     echo "Kết quả phép cộng: $c <br/>";
     $c = $a - $b;
