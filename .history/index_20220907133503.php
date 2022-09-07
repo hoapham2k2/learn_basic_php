@@ -12,10 +12,16 @@
     <h1>Index</h1>
 
     <?php
-    $names = array("THUY", "LONG", "DAN");
-    foreach ($names as $name) {
-        echo $name . '<br />';
-    }
+    $i = 2;
+    do {
+        echo `dsadasdsa
+        ds
+        ad
+        á
+        dá
+        d`;
+        $i++;
+    } while ($i <= 5);
     ?>
 </body>
 

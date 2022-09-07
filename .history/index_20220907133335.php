@@ -10,13 +10,10 @@
 
 <body>
     <h1>Index</h1>
-
-    <?php
-    $names = array("THUY", "LONG", "DAN");
-    foreach ($names as $name) {
-        echo $name . '<br />';
-    }
-    ?>
-</body>
+    $i = 2;
+    do {
+    echo "Số là " . $i . "<br />";
+    $i++;
+    } while($i <= 5); </body>
 
 </html>
