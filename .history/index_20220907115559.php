@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Index</h1>
+    <?php
+    $so_nguyen: 19;
+    $so_thuc: 19.5;
+    $chuoi: "Hello World";
+    $boolean: true;
+    $null: null;
+    $array: array(1, 2, 3, 4, 5);
+    $object: new stdClass();
+    
+    echo "<h1>alo</h1>";
+
+
+    ?>
+</body>
+
+</html>
