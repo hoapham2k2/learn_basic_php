@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
         $password == '123456'
     ) {
         $_SESSION['email'] = $email;
-        header('Location: ./dashboard.php');
+        header('Location: dashboard.php');
     } else {
         echo "incorrect email or password";
     }

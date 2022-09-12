@@ -1,23 +1,14 @@
 <?php
-session_start();
 if (isset($_POST['submit'])) {
-    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    $email = filter_var(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $password = $_POST['password'];
     if (
         $email == 'phamquanghoaz@gmail.com' &&
         $password == '123456'
     ) {
-        $_SESSION['email'] = $email;
-        header('Location: ./dashboard.php');
-    } else {
-        echo "incorrect email or password";
+        header('Location: dashboard.php');
     }
 }
-
-
-// if (isset($_POST['submit'])) {
-//     header('Location: dashboard.php');
-// }
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +33,7 @@ if (isset($_POST['submit'])) {
             <label for="name">password</label>
             <input type="password" name="password">
         </div>
-        <input type="submit" value="Log in" name="submit">
+        <input type="submit" value="Log in">
     </form>
 
 

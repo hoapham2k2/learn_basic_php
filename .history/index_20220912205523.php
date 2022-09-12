@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (isset($_POST['submit'])) {
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $password = $_POST['password'];
@@ -7,8 +6,7 @@ if (isset($_POST['submit'])) {
         $email == 'phamquanghoaz@gmail.com' &&
         $password == '123456'
     ) {
-        $_SESSION['email'] = $email;
-        header('Location: ./dashboard.php');
+        header('Location: dashboard.php');
     } else {
         echo "incorrect email or password";
     }
